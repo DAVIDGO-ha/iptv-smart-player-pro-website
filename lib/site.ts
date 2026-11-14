@@ -1,4 +1,4 @@
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || (process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL ? "https://" + process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL : "http://localhost:3000")).replace(/\/$/, "")
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.iptv-smart-player-pro.com").replace(/\/$/, "")
 // Files are built by GitHub Actions and published to Releases › latest
 export const RELEASE_URL = "https://github.com/DAVIDGO-ha/iptv-smart-player-pro/releases/latest/download"
 export const FILES: Record<string, string> = {
