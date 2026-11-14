@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="demo1" tvg-name="Akamai Live Test" group-title="Demo Live",Akamai Live Test Stream
+https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
+#EXTINF:-1 tvg-id="demo2" tvg-name="Apple Test Stream" group-title="Demo Live",Apple HLS Test Stream
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+#EXTINF:-1 tvg-id="demo3" tvg-name="Mux Test Stream" group-title="Demo Live",Mux HLS Test Stream
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 group-title="Demo Movies",Big Buck Bunny (Blender Foundation, CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+#EXTINF:-1 group-title="Demo Movies",Sintel (Blender Foundation, CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
+#EXTINF:-1 group-title="Demo Movies",Tears of Steel (Blender Foundation, CC BY)
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
