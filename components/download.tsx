@@ -77,7 +77,12 @@ export function Download() {
                   {d.play && <PlayBetaSteps />}
                   {d.code && (
                     <>
-                      <p className="text-sm font-medium text-white/70">In the Downloader app, enter this link:</p>
+                      <p className="text-sm font-medium text-white/70">Downloader app code:</p>
+                      <div className="flex items-center gap-3 rounded-xl border border-gold/40 bg-black/40 p-2 pl-3">
+                        <span className="flex-1 font-mono text-2xl font-black tracking-wider text-gold">4935306</span>
+                        <CopyButton text="4935306" />
+                      </div>
+                      <p className="text-sm font-medium text-white/70">Or enter this link:</p>
                       <div className="flex items-center gap-2 rounded-xl border border-gold/40 bg-black/40 p-2 pl-3 shadow-[0_0_30px_-12px_#FFB020]">
                         <code className="min-w-0 flex-1 break-all font-mono text-xs text-gold">{APK_URL}</code>
                         <CopyButton text={APK_URL} />
