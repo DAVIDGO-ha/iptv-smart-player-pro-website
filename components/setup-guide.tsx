@@ -5,8 +5,8 @@ import { APK_URL } from "@/lib/site"
 import { CopyButton } from "./copy-button"
 import { Reveal, SectionHeading } from "./reveal"
 
-// Downloader app code (aftv.news) — empty until one is created for this website
-const DOWNLOADER_CODE: string = ""
+// Downloader app code (aftv.news)
+const DOWNLOADER_CODE: string = "4935306"
 
 type Step = { icon: typeof Flame; text: React.ReactNode }
 const TABS: { id: string; label: string; icon: typeof Flame; c: string; steps: Step[] }[] = [
@@ -15,7 +15,7 @@ const TABS: { id: string; label: string; icon: typeof Flame; c: string; steps: S
     steps: [
       { icon: Search, text: <>Home › <b>Find</b> › Search <b>“Downloader”</b> › install.</> },
       { icon: Settings, text: <>Settings › My Fire TV › Developer Options › <b>Install unknown apps</b> › Downloader <b>ON</b>.</> },
-      { icon: Link2, text: <>Open Downloader, type <b className="text-gold">{APK_URL.replace("https://", "")}</b> and press <b>Go</b>.</> },
+      { icon: Link2, text: <>Open Downloader, type the code <b className="text-gold">{DOWNLOADER_CODE}</b> and press <b>Go</b>.</> },
       { icon: PackageCheck, text: <><b>Install</b> › <b>Open</b>.</> },
       { icon: MonitorSmartphone, text: <>Note the <b>Device ID</b> and <b>Device Key</b> on the TV, then add your playlist from your phone at <a href="/activate" className="font-semibold text-red underline">Activate TV</a>.</> },
     ],
@@ -34,7 +34,7 @@ const TABS: { id: string; label: string; icon: typeof Flame; c: string; steps: S
     steps: [
       { icon: Store, text: <>Install <b>“Downloader”</b> from Google Play.</> },
       { icon: ShieldCheck, text: <>Allow <b>unknown apps</b> for Downloader.</> },
-      { icon: Link2, text: <>Open Downloader, type <b className="text-gold">{APK_URL.replace("https://", "")}</b> › <b>Go</b> › <b>Install</b>.</> },
+      { icon: Link2, text: <>Open Downloader, type the code <b className="text-gold">{DOWNLOADER_CODE}</b> › <b>Go</b> › <b>Install</b>.</> },
       { icon: PlayCircle, text: <>Open from <b>Apps</b>.</> },
       { icon: MonitorSmartphone, text: <>Scan the QR code on the TV with your phone and add your playlist — no typing with the remote.</> },
     ],
